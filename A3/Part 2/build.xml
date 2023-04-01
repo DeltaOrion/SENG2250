@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="build"/>
+        <echo message="Compiling Java Source"/>
+        <javac srcdir="src" includeantruntime="false" destdir="build">
+        </javac>
+    </target>
+
+</project>
